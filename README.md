@@ -7,6 +7,30 @@ Here are several things you need to consider:
 2. Put **dockerfile** file into project's directory (sub-directory from root). This contains the initial configuration for your app to deploy.
 3. the directory of all services should be same with directory of nginx service respectively.
 
+*Project directory*:
+```
+root
+│   docker-compose.yml
+│
+└───.setup
+|   |
+│   └───nginx
+│   │   │   ...
+|   |
+│   └───php
+│       │   ...
+│
+└───project-directory-1
+│   │   ...
+│   │   ...
+│   │   dockerfile
+│
+└───project-directory-2
+    │   ...
+    │   ...
+    │   dockerfile
+```
+
 See the example of **docker-compose.yml** file below.
 
 ```yml
